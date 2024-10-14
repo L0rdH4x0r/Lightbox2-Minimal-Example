@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Lightbox Example</title>
+        <!-- Lightbox css include -->
+        <link rel="stylesheet" href="css/lightbox.css">
+        
+        <!-- CSS rocks ;) -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section>
+            <h3>Single images</h3>
+            <div>
+                <a href="images/big/image-1.jpg" data-lightbox="example-1"><img class="shader" src="images/small/image-1.jpg" alt="image-1" /></a>
+                <a href="images/big/image-2.jpg" data-lightbox="example-2" data-title="Optional caption."><img class="shader" src="images/small/image-2.jpg" alt="image-1"/></a>
+            </div>
+
+            <hr>
+
+            <h3>A Four Image Set</h3>
+            <div>
+                <a href="images/big/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="shader" src="images/small/image-3.jpg" alt=""/></a>
+                <a href="images/big/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="shader" src="images/small/image-4.jpg" alt="" /></a>
+                <a href="images/big/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="shader" src="images/small/image-5.jpg" alt="" /></a>
+                <a href="images/big/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="shader rotate" src="images/small/image-6.jpg" alt="" /></a>
+            </div>
+            
+            <hr>
+
+            <h3>Load dynamically with JS</h3>
+            <div>
+                <script>
+                    (function () {
+                        var i, skel = '<a href="images/big/image-{i}.jpg" data-lightbox="dynamically" data-title="Image {i}"><img class="shader" src="images/small/image-{i}.jpg" alt=""/></a>';
+                        
+                        for (i=1; i<7; i++)
+                            document.write(skel.split('{i}').join(i));
+                    }());
+                </script>
+            </div>
+            
+        </section>
+
+        <section>
+            <p>For more information, visit <a href="http://lokeshdhakar.com/projects/lightbox2/">http://lokeshdhakar.com/projects/lightbox2/</a></p>
+        </section>
+
+        <!-- Lightbox include! -->
+        <script src="js/lightbox-plus-jquery.js"></script>
+    </body>
+</html>

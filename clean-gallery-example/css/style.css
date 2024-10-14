@@ -1,0 +1,16 @@
+.shader {
+    margin-left: 10px;
+
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+.rotate {
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+
+    transform: rotate(30deg);
+}
